@@ -23,8 +23,8 @@ function onCreateBtnClick() {
   for (let i = 0; i < quantity; i += 1) {
     refs.divsBox.appendChild(document.createElement("div"));
 
-    refs.divsBox.children[i].style.width = "30px"; // так и не придумал, как добавлять в цикле 10px, учитывая, что данные это строки
-    refs.divsBox.children[i].style.height = "30px";
+    refs.divsBox.children[i].style.width = `${30 + 10 * i}px`;
+    refs.divsBox.children[i].style.height = `${30 + 10 * i}px`;
     refs.divsBox.children[i].style.backgroundColor = getRandomHexColor();
   }
 }
