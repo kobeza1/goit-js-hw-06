@@ -18,8 +18,8 @@ const galleryMarkup = images.map(
     `<li class = gallery__list-item><img src='${url}' alt = '${alt}'></img></li>`
 );
 
-console.log(galleryMarkup);
-console.log(galleryMarkup.join(""));
+// console.log(galleryMarkup);
+// console.log(galleryMarkup.join(""));
 
 const gallleryRef = document.querySelector(".gallery");
 gallleryRef.insertAdjacentHTML("afterbegin", galleryMarkup.join(""));
