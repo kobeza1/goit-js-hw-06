@@ -21,4 +21,4 @@ const galleryMarkup = images.map(
 console.log(galleryMarkup);
 
 const gallleryRef = document.querySelector(".gallery");
-gallleryRef.insertAdjacentHTML("afterbegin", galleryMarkup);
+gallleryRef.insertAdjacentHTML("afterbegin", galleryMarkup.join(" "));
