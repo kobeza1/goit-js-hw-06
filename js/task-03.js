@@ -19,6 +19,7 @@ const galleryMarkup = images.map(
 );
 
 console.log(galleryMarkup);
+console.log(galleryMarkup.join(""));
 
 const gallleryRef = document.querySelector(".gallery");
-gallleryRef.insertAdjacentHTML("afterbegin", galleryMarkup.join(" "));
+gallleryRef.insertAdjacentHTML("afterbegin", galleryMarkup.join(""));
